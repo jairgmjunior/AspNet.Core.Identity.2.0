@@ -233,20 +233,4 @@ _Pvt_Extensions
 # FAKE - F# Make
 .fake/
 #.gitignore
-/themeforest-9694847-pages-admin-dashboard-template-web-app/bundle
-/Openline.Erp/bower_components/
-/Openline.Erp/Openline.Erp.Web/wwwroot/uploads/
-/Openline.Erp/Openline.Erp.Web/wwwroot/remessas/
-/Openline.Erp/Openline.Erp.Web/wwwroot/Sped/
-/Openline.Erp/Openline.Erp.Web/wwwroot/SpedArquivo/
 
-#appsettings.Development.json
-#/Openline.Erp/Openline.Erp.Web/appsettings.Development.json
-/Openline.Erp/Openline.Erp.Web/package-lock.json
-/Openline.Erp/Openline.Erp.Web/wwwroot/js/Kendo/telerikReportViewer.kendo-12.2.18.1129.min.js
-/Openline.Erp/Openline.Erp.Web/wwwroot/js/Kendo/telerikReportViewer-12.2.18.1129.min.js
-/Openline.Erp/Openline.Erp.Reports/ReportViewer/js/telerikReportViewer.kendo-12.2.18.1129.min.js
-/Openline.Erp/Openline.Erp.Reports/ReportViewer/js/telerikReportViewer-12.2.18.1129.min.js
-/Openline.Erp/Openline.Erp.Reports/ReportViewer/Reports/Compras/Barcodes Report.trdp
-
-/Openline.Erp/Openline.Erp.Data/bin/Debug
