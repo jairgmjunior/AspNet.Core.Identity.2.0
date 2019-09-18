@@ -40,6 +40,27 @@ namespace Identity.Core
                 //registra os serviços e adiciona o provider padrão de token
                 .AddDefaultTokenProviders();
 
+            services.Configure<IdentityOptions>(opt =>
+            {
+                //referente a tipo de password
+                opt.Password.RequireDigit = true;
+                opt.Password.RequiredLength = 8;
+                opt.Password.RequiredUniqueChars = 6;
+                opt.Password.RequireLowercase = true;
+                opt.Password.RequireNonAlphanumeric = true;
+                opt.Password.RequireUppercase = true;
+            });
+
+            services.ConfigureApplicationCookie(opt =>
+            {
+                opt.CookieHttpOnly = true;
+                opt.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                opt.LoginPath = "/Account/Login";
+                opt.LogoutPath = "/Account/Logout";
+                opt.AccessDeniedPath = "/Account/AccessDenied";
+                opt.SlidingExpiration = true;
+            });
+
             services.AddMvc();
         }
 
